@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio — Francisco David</title>
+  <meta name="description" content="Portfólio de Francisco David — estudante de Desenvolvimento de Sistemas (DDS)">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#0ea5a4; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --maxw:1000px; --radius:14px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,#071028 0%, #071727 60%); color:#e6eef6; -webkit-font-smoothing:antialiased;}
+    .wrap{max-width:var(--maxw); margin:32px auto; padding:24px;}
+    header{display:flex; gap:16px; align-items:center; justify-content:space-between}
+    .brand{display:flex; gap:16px; align-items:center}
+    .avatar{width:72px; height:72px; border-radius:12px; background:linear-gradient(135deg,var(--accent),#60a5fa); display:flex; align-items:center; justify-content:center; font-weight:700;}
+    h1{font-size:1.6rem; margin:0}
+    p.lead{margin:4px 0 0; color:var(--muted)}
+
+    nav{display:flex; gap:12px}
+    a.btn{padding:8px 12px; border-radius:10px; background:var(--glass); color:inherit; text-decoration:none; border:1px solid rgba(255,255,255,0.04); font-size:0.95rem}
+
+    main{display:grid; grid-template-columns:1fr 320px; gap:20px; margin-top:22px}
+    @media (max-width:880px){main{grid-template-columns:1fr} .right{order:-1}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px; border-radius:var(--radius); border:1px solid rgba(255,255,255,0.03);}
+    section h2{margin:0 0 12px 0; font-size:1.05rem}
+    ul{margin:0; padding-left:18px}
+    li{margin-bottom:8px}
+
+    .projects .project{padding:12px; margin-bottom:10px; background:rgba(255,255,255,0.02); border-radius:10px}
+    .projects .meta{font-size:0.85rem; color:var(--muted)}
+
+    .contact a{display:inline-block; margin-right:8px; margin-bottom:8px; text-decoration:none}
+    .contact .email{background:rgba(14,165,164,0.12); padding:8px 10px; border-radius:10px; color:var(--accent)}
+    .contact .linkedin{background:rgba(96,165,250,0.08); padding:8px 10px; border-radius:10px}
+
+    footer{margin-top:18px; color:var(--muted); font-size:0.9rem; text-align:center}
+
+    /* small utility */
+    .muted{color:var(--muted)}
+    .pill{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.03)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">FD</div>
+        <div>
+          <h1>Francisco David</h1>
+          <p class="lead">Estudante do 1º ano em DDS — EEEP Antônio Tarcísio Aragão</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#sobre">Sobre</a>
+        <a class="btn" href="#experiencias">Experiências</a>
+        <a class="btn" href="#projetos">Projetos</a>
+        <a class="btn" href="#contatos">Contatos</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="left">
+        <section id="sobre" class="card">
+          <h2>Sobre mim</h2>
+          <p>Meu nome é <strong>Francisco David</strong> e estou realizando o primeiro ano no curso de <strong>DDS (Desenvolvimento de Sistemas)</strong> na <strong>EEEP Antônio Tarcísio Aragão</strong>. Confira mais informações abaixo!</p>
+        </section>
+
+        <section id="experiencias" class="card" style="margin-top:14px">
+          <h2>Experiências</h2>
+          <ul>
+            <li>Desenvolvimento de software</li>
+            <li>Lógica de programação</li>
+            <li>Manutenção de computadores</li>
+          </ul>
+        </section>
+
+        <section id="projetos" class="card projects" style="margin-top:14px">
+          <h2>Projetos</h2>
+          <div class="project">
+            <strong>Zezin dos coco</strong>
+            <div class="meta">Jogo criado com RPG Maker</div>
+            <p class="muted" style="margin-top:8px">Descrição curta: RPG de aventura.</p>
+          </div>
+
+          <div class="project">
+            <strong>Jogo em Scratch</strong>
+            <div class="meta">Em andamento</div>
+            <p class="muted" style="margin-top:8px">Descrição curta: Protótipo no Scratch — em desenvolvimento.</p>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="right">
+        <div id="contatos" class="card contact">
+          <h2>Contatos</h2>
+          <p><a class="email" href="mailto:kalinedavidalves@gmail.com">kalinedavidalves@gmail.com</a></p>
+          <p><a class="linkedin" href="https://www.linkedin.com/in/francisco-david-895280392" target="_blank" rel="noopener noreferrer">LinkedIn — Francisco David</a></p>
+
+          <div style="margin-top:12px">
+            <span class="pill">Estudante • DDS</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2>Resumo rápido</h2>
+          <p class="muted">Atualmente focado em aprender lógica de programação, praticar desenvolvimento de jogos e fortalecer conhecimentos em manutenção de hardware. Aberto a colaborações e trocas de experiências.</p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2>Call to action</h2>
+          <p class="muted">Quer ver os arquivos do jogo ou colaborar? Adicione links aos repositórios do GitHub abaixo ou envie um e‑mail.</p>
+          <p><a class="btn" href="#projetos">Ver projetos</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Feito por <strong>Francisco David</strong> — 2025</div>
+    </footer>
+  </div>
+</body>
+</html>
